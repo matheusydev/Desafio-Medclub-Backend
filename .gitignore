@@ -16,3 +16,6 @@ db.sqlite3
 
 # Arquivos do sistema
 .DS_Store
+
+# Logs
+*.log
