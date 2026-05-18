@@ -42,56 +42,6 @@ O objetivo da API é permitir que o aplicativo mobile possa **agendar, visualiza
 
 ---
 
-## 🔧 Acesso ao Painel Administrativo
-
-URL: http://127.0.0.1:8000/admin/
-
-| Campo | Valor |
-|---|---|
-| Usuário | adminmedclub |
-| Senha | desafio1981 |
-
-## 🗺️ Endpoints da API
-
-Base URL: `http://127.0.0.1:8000/api/`
-
-| Método | Endpoint | Descrição |
-|---|---|---|
-| `GET` | `/api/consultas/` | Lista todas as consultas |
-| `POST` | `/api/consultas/` | Cadastra uma nova consulta |
-| `GET` | `/api/consultas/{id}/` | Retorna detalhes de uma consulta |
-| `PUT` | `/api/consultas/{id}/` | Atualiza uma consulta existente |
-| `PATCH` | `/api/consultas/{id}/` | Atualiza parcialmente uma consulta |
-| `DELETE` | `/api/consultas/{id}/` | Remove uma consulta |
-
-### Exemplo de payload (POST/PUT):
-
-```json
-{
-  "data": "2026-05-20",
-  "hora": "10:30:00",
-  "nome_medico": "Dr. Matheus",
-  "especialidade": "Cardiologista",
-  "localizacao": "Medclub Centro"
-}
-```
-
-### Exemplo de resposta (GET):
-
-```json
-[
-  {
-    "id": 1,
-    "data": "2026-05-20",
-    "hora": "10:30:00",
-    "nome_medico": "Dr. Matheus",
-    "especialidade": "Cardiologista",
-    "localizacao": "Medclub Centro"
-  }
-]
-```
-
----
 
 ## ⚙️ Como Executar o Projeto
 
@@ -143,37 +93,6 @@ python manage.py runserver
 A API estará disponível em `http://127.0.0.1:8000/api/`
 
 ---
-
-## 🧪 Como Testar a API
-
-### Opção 1 — Swagger 
-
-Acesse a documentação interativa no navegador:
-
-```
-http://127.0.0.1:8000/api/docs/
-```
-
-Pelo Swagger você pode testar todos os endpoints diretamente no navegador, sem precisar de nenhuma ferramenta adicional.
-
-### Opção 2 — Browsable API do DRF
-
-O Django REST Framework oferece uma interface navegável automática:
-
-```
-http://127.0.0.1:8000/api/consultas/
-```
-
-### Opção 3 — Postman 
-
-Importe a coleção ou crie requisições manualmente apontando para:
-
-```
-http://127.0.0.1:8000/api/consultas/
-```
-
----
-
 ## 📁 Estrutura de Pastas
 
 ```bash
@@ -223,6 +142,90 @@ Centraliza as rotas globais, incluindo as rotas do app com prefixo `api/` e as r
 Configura o Django, DRF, drf-spectacular e as variáveis de ambiente via python-decouple.
 
 ---
+
+
+## 🗺️ Endpoints da API
+
+Base URL: `http://127.0.0.1:8000/api/`
+
+| Método | Endpoint | Descrição |
+|---|---|---|
+| `GET` | `/api/consultas/` | Lista todas as consultas |
+| `POST` | `/api/consultas/` | Cadastra uma nova consulta |
+| `GET` | `/api/consultas/{id}/` | Retorna detalhes de uma consulta |
+| `PUT` | `/api/consultas/{id}/` | Atualiza uma consulta existente |
+| `PATCH` | `/api/consultas/{id}/` | Atualiza parcialmente uma consulta |
+| `DELETE` | `/api/consultas/{id}/` | Remove uma consulta |
+
+### Exemplo de payload (POST/PUT):
+
+```json
+{
+  "data": "2026-05-20",
+  "hora": "10:30:00",
+  "nome_medico": "Dr. Matheus",
+  "especialidade": "Cardiologista",
+  "localizacao": "Medclub Centro"
+}
+```
+
+### Exemplo de resposta (GET):
+
+```json
+[
+  {
+    "id": 1,
+    "data": "2026-05-20",
+    "hora": "10:30:00",
+    "nome_medico": "Dr. Matheus",
+    "especialidade": "Cardiologista",
+    "localizacao": "Medclub Centro"
+  }
+]
+```
+
+---
+
+## 🧪 Como Testar a API
+
+### Opção 1 — Swagger 
+
+Acesse a documentação interativa no navegador:
+
+```
+http://127.0.0.1:8000/api/docs/
+```
+
+Pelo Swagger você pode testar todos os endpoints diretamente no navegador, sem precisar de nenhuma ferramenta adicional.
+
+### Opção 2 — Browsable API do DRF
+
+O Django REST Framework oferece uma interface navegável automática:
+
+```
+http://127.0.0.1:8000/api/consultas/
+```
+
+### Opção 3 — Postman 
+
+Importe a coleção ou crie requisições manualmente apontando para:
+
+```
+http://127.0.0.1:8000/api/consultas/
+```
+
+---
+
+## 🔧 Acesso ao Painel Administrativo
+
+URL: http://127.0.0.1:8000/admin/
+
+| Campo | Valor |
+|---|---|
+| Usuário | adminmedclub |
+| Senha | desafio1981 |
+
+
 
 ## 🧠 Decisões Técnicas
 
