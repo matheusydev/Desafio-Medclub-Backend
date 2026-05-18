@@ -26,6 +26,10 @@ class ConsultaViewSet(viewsets.ModelViewSet):
     @extend_schema(summary="Atualiza uma consulta existente")
     def update(self, request, *args, **kwargs):
         return super().update(request, *args, **kwargs)
+    
+    @extend_schema(summary="Atualiza parcialmente uma consulta")
+    def partial_update(self, request, *args, **kwargs):
+        return super().partial_update(request, *args, **kwargs)
 
     @extend_schema(summary="Remove uma consulta")
     def destroy(self, request, *args, **kwargs):

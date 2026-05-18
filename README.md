@@ -42,6 +42,15 @@ O objetivo da API é permitir que o aplicativo mobile possa **agendar, visualiza
 
 ---
 
+## 🔧 Acesso ao Painel Administrativo
+
+URL: http://127.0.0.1:8000/admin/
+
+| Campo | Valor |
+|---|---|
+| Usuário | adminmedclub |
+| Senha | desafio1981 |
+
 ## 🗺️ Endpoints da API
 
 Base URL: `http://127.0.0.1:8000/api/`
