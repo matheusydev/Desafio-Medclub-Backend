@@ -126,3 +126,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
+
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'Medclub Consultas API',
+    'DESCRIPTION': 'API REST para gerenciamento de consultas médicas',
+    'VERSION': '1.0.0',
+}
