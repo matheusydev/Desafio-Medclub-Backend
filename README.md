@@ -106,9 +106,6 @@ Base URL: `http://127.0.0.1:8000/api/`
 # Clone o repositório
 git clone https://github.com/matheusydev/Desafio-Medclub-Backend.git
 
-# Acesse a pasta do projeto
-cd Desafio-Medclub-Backend/Desafio_Medclub_Backend
-
 # Crie e ative o ambiente virtual
 python -m venv venv
 venv\Scripts\activate       # Windows
